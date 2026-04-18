@@ -1,6 +1,9 @@
 const header = document.querySelector("[data-header]");
 const navToggle = document.querySelector("[data-nav-toggle]");
 const navLinks = document.querySelector("[data-nav-links]");
+const studioTabs = document.querySelectorAll("[data-studio-tab]");
+const studioPanels = document.querySelectorAll("[data-studio-panel]");
+const studioTopNav = document.querySelectorAll("[data-studio-nav]");
 
 function setHeaderState() {
   if (!header) return;
@@ -26,21 +29,55 @@ if (navToggle && navLinks) {
   });
 }
 
-document.querySelectorAll("[data-studio-tab]").forEach((button) => {
+function setStudioTab(target) {
+  if (!target) return;
+
+  let matched = false;
+  studioTabs.forEach((item) => {
+    const active = item.dataset.studioTab === target;
+    matched = matched || active;
+    item.classList.toggle("active", active);
+    item.setAttribute("aria-selected", String(active));
+  });
+
+  if (!matched) return;
+
+  studioPanels.forEach((panel) => {
+    panel.hidden = panel.dataset.studioPanel !== target;
+  });
+
+  studioTopNav.forEach((link) => {
+    const active = link.dataset.studioNav === target;
+    link.classList.toggle("is-active", active);
+    if (active) {
+      link.setAttribute("aria-current", "page");
+    } else {
+      link.removeAttribute("aria-current");
+    }
+  });
+}
+
+studioTabs.forEach((button) => {
   button.addEventListener("click", () => {
-    const target = button.dataset.studioTab;
-
-    document.querySelectorAll("[data-studio-tab]").forEach((item) => {
-      const active = item === button;
-      item.classList.toggle("active", active);
-      item.setAttribute("aria-selected", String(active));
-    });
-
-    document.querySelectorAll("[data-studio-panel]").forEach((panel) => {
-      panel.hidden = panel.dataset.studioPanel !== target;
-    });
+    setStudioTab(button.dataset.studioTab);
   });
 });
+
+studioTopNav.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    setStudioTab(link.dataset.studioNav);
+  });
+});
+
+document.querySelectorAll("[data-studio-static]").forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+  });
+});
+
+const initialTab = document.querySelector("[data-studio-tab].active")?.dataset.studioTab;
+setStudioTab(initialTab || "products");
 
 document.querySelectorAll("[data-preview-form]").forEach((form) => {
   const scope = form.closest("[data-studio-panel]") || document;
