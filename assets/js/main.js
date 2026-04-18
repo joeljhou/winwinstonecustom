@@ -16,7 +16,7 @@ const languageLabel = document.querySelector("[data-language-label]");
 
 const translations = {
   en: {
-    metaTitle: "Win Win Stone & Homeplus | OEM/ODM Natural Stone",
+    metaTitle: "Win Win Stone | OEM/ODM Natural Stone",
     metaDescription: "Factory-direct OEM and ODM natural stone sinks, vanities, bathtubs, tables, and custom architectural pieces from Yunfu, Guangdong, China.",
     switchLabel: "中文",
     switchAria: "Switch to Chinese",
@@ -27,7 +27,7 @@ const translations = {
       [".nav-links a:nth-child(2)", "OEM/ODM"],
       [".nav-links a:nth-child(3)", "Why Us"],
       [".nav-links a:nth-child(4)", "Contact"],
-      [".hero .eyebrow", "Win Win Stone & Homeplus"],
+      [".hero .eyebrow", "Win Win Stone"],
       ["#hero-title", "OEM/ODM natural stone, custom-made from factory to space."],
       [".hero-copy", "From Yunfu, Guangdong, the heart of the stone industry, we transform marble, travertine, quartzite, and onyx into functional works of art for homes, hospitality, and product lines."],
       [".hero-actions .primary", "Get a Free Quote"],
@@ -52,7 +52,7 @@ const translations = {
       ["#service-title", "A clear production path for homeowners, designers, and businesses."],
       [".why .eyebrow", "One Stone. One Space. One Of A Kind."],
       ["#why-title", "Every natural stone carries its own veins, texture, and story."],
-      [".why-copy p:nth-of-type(2)", "Win Win Stone & Homeplus honors that uniqueness through design and craftsmanship. No two spaces should feel the same because no two stones are ever identical."],
+      [".why-copy p:nth-of-type(2)", "Win Win Stone honors that uniqueness through design and craftsmanship. No two spaces should feel the same because no two stones are ever identical."],
       [".why-copy p:nth-of-type(3)", "From custom-cut countertops to hand-finished vanities, every creation is designed and crafted to fit not only your measurements, but also your vision."],
       [".contact .eyebrow", "Contact"],
       ["#contact-title", "Share your drawings, sizes, material ideas, or project target."],
@@ -113,7 +113,7 @@ const translations = {
     }
   },
   zh: {
-    metaTitle: "Win Win Stone & Homeplus | 天然石材 OEM/ODM 定制",
+    metaTitle: "Win Win Stone | 天然石材 OEM/ODM 定制",
     metaDescription: "来自中国广东云浮的天然石材源头工厂，提供石材台盆、浴室柜、浴缸、餐桌与建筑定制件 OEM/ODM 服务。",
     switchLabel: "EN",
     switchAria: "Switch to English",
@@ -124,7 +124,7 @@ const translations = {
       [".nav-links a:nth-child(2)", "OEM/ODM"],
       [".nav-links a:nth-child(3)", "为什么选我们"],
       [".nav-links a:nth-child(4)", "联系"],
-      [".hero .eyebrow", "Win Win Stone & Homeplus"],
+      [".hero .eyebrow", "Win Win Stone"],
       ["#hero-title", "天然石材 OEM/ODM 定制，从源头工厂到项目空间。"],
       [".hero-copy", "我们位于广东云浮这一石材产业核心产区，将大理石、洞石、石英岩、缟玛瑙等天然石材打造为适用于住宅、酒店与品牌产品线的功能艺术品。"],
       [".hero-actions .primary", "获取免费报价"],
@@ -149,7 +149,7 @@ const translations = {
       ["#service-title", "面向业主、设计师和企业的清晰生产流程。"],
       [".why .eyebrow", "一块石材，一个空间，独一无二。"],
       ["#why-title", "每一块天然石材都有自己的纹理、质感和故事。"],
-      [".why-copy p:nth-of-type(2)", "Win Win Stone & Homeplus 通过设计与工艺尊重这种独特性。没有两个空间应该完全相同，因为没有两块天然石材完全一样。"],
+      [".why-copy p:nth-of-type(2)", "Win Win Stone 通过设计与工艺尊重这种独特性。没有两个空间应该完全相同，因为没有两块天然石材完全一样。"],
       [".why-copy p:nth-of-type(3)", "从定制台面到手工打磨的浴室柜，每件作品不仅贴合尺寸，也贴合您的愿景。"],
       [".contact .eyebrow", "联系"],
       ["#contact-title", "发送您的图纸、尺寸、材料想法或项目目标。"],
@@ -335,7 +335,7 @@ function applyLanguage(language) {
   document.documentElement.lang = language === "zh" ? "zh-CN" : "en";
   document.title = copy.metaTitle;
   document.querySelector("meta[name='description']").setAttribute("content", copy.metaDescription);
-  document.querySelector("meta[property='og:title']").setAttribute("content", language === "zh" ? "Win Win Stone & Homeplus | 天然石材定制" : "Win Win Stone & Homeplus");
+  document.querySelector("meta[property='og:title']").setAttribute("content", language === "zh" ? "Win Win Stone | 天然石材定制" : "Win Win Stone");
   document.querySelector("meta[property='og:description']").setAttribute("content", copy.metaDescription);
   languageLabel.textContent = copy.switchLabel;
   languageToggle.setAttribute("aria-label", copy.switchAria);

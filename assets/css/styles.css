@@ -234,6 +234,12 @@ h3 {
   letter-spacing: 0;
 }
 
+:lang(zh-CN) h1,
+:lang(zh-CN) h2,
+:lang(zh-CN) h3 {
+  line-height: 1.35;
+}
+
 h1 {
   max-width: 800px;
   font-size: clamp(2.5rem, 7vw, 5.8rem);
@@ -773,6 +779,42 @@ h3 {
   color: var(--ink);
   background: rgba(255, 255, 255, 0.9);
   cursor: pointer;
+}
+
+:lang(zh-CN) body {
+  line-height: 1.8;
+}
+
+:lang(zh-CN) .eyebrow {
+  letter-spacing: 0.04em;
+}
+
+:lang(zh-CN) .hero-copy {
+  line-height: 1.9;
+}
+
+:lang(zh-CN) .intro p:last-child,
+:lang(zh-CN) .section-heading p,
+:lang(zh-CN) .video-grid p,
+:lang(zh-CN) .why-copy p,
+:lang(zh-CN) .contact-grid p {
+  line-height: 1.9;
+}
+
+:lang(zh-CN) .proof-item strong {
+  line-height: 1.4;
+}
+
+:lang(zh-CN) .proof-item span {
+  line-height: 1.6;
+}
+
+:lang(zh-CN) .product-body strong {
+  line-height: 1.4;
+}
+
+:lang(zh-CN) .process-list li {
+  line-height: 1.4;
 }
 
 @media (max-width: 980px) {
