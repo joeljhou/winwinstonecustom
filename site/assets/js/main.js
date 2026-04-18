@@ -29,7 +29,6 @@ const translations = {
       [".nav-links a:nth-child(3)", "OEM/ODM"],
       [".nav-links a:nth-child(4)", "Why Us"],
       [".nav-links a:nth-child(5)", "Contact"],
-      [".nav-links a:nth-child(6)", "Studio"],
       [".hero .eyebrow", "Win-Win Stone"],
       ["#hero-title", "OEM/ODM natural stone, custom-made from factory to space."],
       [".hero-copy", "From Yunfu, Guangdong, the heart of the stone industry, we transform marble, travertine, quartzite, and onyx into functional works of art for homes, hospitality, and product lines."],
@@ -71,7 +70,6 @@ const translations = {
       [".footer-links a:nth-child(3)", "OEM/ODM"],
       [".footer-links a:nth-child(4)", "Why Us"],
       [".footer-links a:nth-child(5)", "Contact"],
-      [".footer-links a:nth-child(6)", "Studio"],
       [".dialog-content .eyebrow", "Product Detail"],
       ["[data-dialog-quote]", "Ask for This Product"]
     ],
@@ -113,6 +111,100 @@ const translations = {
     mail: {
       defaultSubject: "OEM/ODM stone inquiry",
       quotePrefix: "Quote request"
+    },
+    pages: {
+      products: {
+        metaTitle: "Products | Win-Win Stone",
+        metaDescription: "Browse custom natural stone sinks, bathtubs, vanities, dining tables, and OEM/ODM product references from Win-Win Stone.",
+        ogTitle: "Products | Win-Win Stone",
+        ogDescription: "Factory-direct custom stone products made from marble, travertine, quartzite, onyx, and more.",
+        text: [
+          [".page-hero .eyebrow", "Product Catalog"],
+          ["#products-hero-title", "Natural stone pieces shaped for custom production."],
+          [".page-hero-content > p:not(.eyebrow)", "Browse product references by use, material, and production direction. Each piece can be adjusted by stone selection, size, finish, edge detail, and packing requirement."],
+          [".page-hero .button.primary", "Browse Catalog"],
+          [".page-hero .button.ghost", "Request Quote"],
+          [".catalog-intro .eyebrow", "Stone Product Lines"],
+          [".catalog-intro h2", "From one-off interior pieces to repeatable OEM/ODM SKUs."],
+          [".product-direction-list article:nth-child(1) strong", "Bathroom Stonework"],
+          [".product-direction-list article:nth-child(1) p", "Pedestal sinks, vessel sinks, vanities, bathtubs, shower trays, and coordinated bathroom sets."],
+          [".product-direction-list article:nth-child(2) strong", "Furniture Objects"],
+          [".product-direction-list article:nth-child(2) p", "Dining tables, coffee tables, side tables, plinths, consoles, and sculptural stone furniture."],
+          [".product-direction-list article:nth-child(3) strong", "Project Custom"],
+          [".product-direction-list article:nth-child(3) p", "Hotel, villa, retail, and designer project pieces produced from drawings, samples, or references."],
+          [".product-catalog .eyebrow", "Browse Products"],
+          ["#catalog-title", "Material-led references for custom orders."],
+          [".product-catalog .section-heading > p:last-child", "Explore common product directions and use the filters to narrow by sink, table, bathroom, or project custom work."],
+          [".filter-button[data-filter='all']", "All"],
+          [".filter-button[data-filter='sinks']", "Sinks"],
+          [".filter-button[data-filter='tables']", "Tables"],
+          [".filter-button[data-filter='bathroom']", "Bathroom"],
+          [".filter-button[data-filter='project']", "Project"],
+          [".material-section .eyebrow", "Material Direction"],
+          ["#material-title", "Show the buyer what can be customized before they ask."],
+          [".spec-list div:nth-child(1) span", "Material"],
+          [".spec-list div:nth-child(1) strong", "Marble, travertine, quartzite, onyx, limestone"],
+          [".spec-list div:nth-child(2) span", "Finish"],
+          [".spec-list div:nth-child(2) strong", "Polished, honed, brushed, leathered, filled or unfilled"],
+          [".spec-list div:nth-child(3) span", "Production"],
+          [".spec-list div:nth-child(3) strong", "CAD confirmation, slab matching, hand finishing, export packing"],
+          [".spec-list div:nth-child(4) span", "Order Type"],
+          [".spec-list div:nth-child(4) strong", "Single custom piece, project batch, OEM/ODM product line"],
+          [".cta-band .eyebrow", "Custom Request"],
+          ["#products-cta-title", "Send a product reference, drawing, or target material."],
+          [".cta-band .button", "Start Inquiry"]
+        ],
+        products: [
+          ["Sinks / Marble", "Luxury green marble pedestal sink", "Natural green marble, custom drain position, polished or honed finish."],
+          ["Sinks / Calacatta", "Calacatta pedestal sink", "Clean column profile for luxury residential and hospitality bathrooms."],
+          ["Sinks / Vessel", "Hand-crafted vessel sink", "Compact production reference for designer collections and project sets."],
+          ["Tables / Travertine", "Minimalist travertine dining table", "Sculptural base options, matched slabs, reinforced packing for export."],
+          ["Tables / Dining", "Graceful travertine dining table", "Elegant leg geometry with repeatable production detailing."],
+          ["Tables / Minimal", "Simple travertine dining table", "Simple silhouette, customized slab size, warm natural surface."],
+          ["Bathroom / Bathtub", "Natural marble bathtub", "Statement stone bathtub with drawing confirmation and factory inspection."],
+          ["Tables / Red Travertine", "Red travertine dining table", "Distinctive reddish-brown veins for signature residential interiors."],
+          ["Bathroom / Vanity", "Luxury stone pedestal vanity", "Integrated stone form for boutique bathrooms and OEM ranges."]
+        ]
+      },
+      blog: {
+        metaTitle: "Stone Journal | Win-Win Stone",
+        metaDescription: "Read Win-Win Stone articles on natural stone materials, custom product design, factory process, packing, care, and OEM/ODM stone projects.",
+        ogTitle: "Stone Journal | Win-Win Stone",
+        ogDescription: "Material guides, product ideas, project notes, and factory process articles from Win-Win Stone.",
+        text: [
+          [".page-hero .eyebrow", "Stone Journal"],
+          ["#journal-hero-title", "Material knowledge for custom stone decisions."],
+          [".page-hero-content > p:not(.eyebrow)", "Guides, product ideas, project notes, and factory process articles for designers, homeowners, and product teams sourcing natural stone."],
+          [".page-hero .button.primary", "Read Articles"],
+          [".page-hero .button.ghost", "Product Catalog"],
+          [".journal-feature .eyebrow", "Featured Guide"],
+          ["#feature-title", "How to choose the right stone for a custom bathroom sink."],
+          [".feature-story p:not(.eyebrow)", "Marble, travertine, quartzite, and onyx each behave differently in daily use. A strong article helps buyers understand surface finish, maintenance, thickness, drain details, and packing before they request a quote."],
+          [".story-meta span:nth-child(1)", "Stone Guide"],
+          [".story-meta span:nth-child(2)", "6 min read"],
+          [".story-meta span:nth-child(3)", "Updated Apr 2026"],
+          [".feature-story .text-link span", "Browse related posts"],
+          [".article-section .eyebrow", "Article Library"],
+          ["#articles-title", "Content that supports sourcing, design, and production."],
+          [".article-section .section-heading > p:last-child", "Use guides, product ideas, process notes, and care articles to answer buyer questions before an inquiry starts."],
+          [".filter-button[data-blog-filter='all']", "All"],
+          [".filter-button[data-blog-filter='guide']", "Stone Guide"],
+          [".filter-button[data-blog-filter='ideas']", "Product Ideas"],
+          [".filter-button[data-blog-filter='process']", "Factory Process"],
+          [".filter-button[data-blog-filter='care']", "Care"],
+          [".cta-band .eyebrow", "Need a Stone Answer?"],
+          ["#journal-cta-title", "Send a material question or product reference."],
+          [".cta-band .button", "Contact Factory"]
+        ],
+        articles: [
+          ["Stone Guide", "Green marble sinks: where bold color works best", "Design notes on veining, lighting, faucet pairing, and finish options for statement bathrooms.", "Apr 18, 2026"],
+          ["Product Ideas", "Travertine dining tables for quiet luxury interiors", "How to brief table proportions, base structure, slab selection, and export packing.", "Apr 15, 2026"],
+          ["Factory Process", "What happens after drawing confirmation", "A production timeline from material purchase and cutting to inspection, packing, and delivery.", "Apr 12, 2026"],
+          ["Care", "Daily care for natural marble bathtubs", "Cleaning products, sealing cadence, and habits that protect the stone surface.", "Apr 9, 2026"],
+          ["Product Ideas", "When to specify red travertine instead of beige stone", "Color direction, room tone, and production notes for a stronger interior signature.", "Apr 5, 2026"],
+          ["Factory Process", "How OEM/ODM stone furniture orders are standardized", "Repeatable sizes, tolerances, drawings, labels, and packing details for product lines.", "Apr 1, 2026"]
+        ]
+      }
     }
   },
   zh: {
@@ -130,7 +222,6 @@ const translations = {
       [".nav-links a:nth-child(3)", "OEM/ODM"],
       [".nav-links a:nth-child(4)", "为什么选我们"],
       [".nav-links a:nth-child(5)", "联系"],
-      [".nav-links a:nth-child(6)", "后台"],
       [".hero .eyebrow", "稳胜石材"],
       ["#hero-title", "天然石材 OEM/ODM 定制，从源头工厂到项目空间。"],
       [".hero-copy", "我们位于广东云浮这一石材产业核心产区，将大理石、洞石、石英岩、缟玛瑙等天然石材打造为适用于住宅、酒店与品牌产品线的功能艺术品。"],
@@ -172,7 +263,6 @@ const translations = {
       [".footer-links a:nth-child(3)", "OEM/ODM"],
       [".footer-links a:nth-child(4)", "为什么选我们"],
       [".footer-links a:nth-child(5)", "联系"],
-      [".footer-links a:nth-child(6)", "后台"],
       [".dialog-content .eyebrow", "产品详情"],
       ["[data-dialog-quote]", "咨询此产品"]
     ],
@@ -214,10 +304,105 @@ const translations = {
     mail: {
       defaultSubject: "OEM/ODM 石材询盘",
       quotePrefix: "报价请求"
+    },
+    pages: {
+      products: {
+        metaTitle: "产品目录 | 稳胜石材",
+        metaDescription: "浏览稳胜石材天然石材台盆、浴缸、浴室柜、餐桌及 OEM/ODM 产品参考。",
+        ogTitle: "产品目录 | 稳胜石材",
+        ogDescription: "源头工厂定制天然石材产品，可选大理石、洞石、石英岩、缟玛瑙等材料。",
+        text: [
+          [".page-hero .eyebrow", "产品目录"],
+          ["#products-hero-title", "面向定制生产的天然石材产品。"],
+          [".page-hero-content > p:not(.eyebrow)", "按用途、材料和生产方向浏览产品参考。每件产品都可根据石材、尺寸、表面、边型和包装要求调整。"],
+          [".page-hero .button.primary", "浏览目录"],
+          [".page-hero .button.ghost", "获取报价"],
+          [".catalog-intro .eyebrow", "石材产品线"],
+          [".catalog-intro h2", "从单件空间定制到可复购的 OEM/ODM 产品。"],
+          [".product-direction-list article:nth-child(1) strong", "浴室石材产品"],
+          [".product-direction-list article:nth-child(1) p", "立柱盆、台上盆、浴室柜、浴缸、淋浴底座及成套浴室石材产品。"],
+          [".product-direction-list article:nth-child(2) strong", "石材家具单品"],
+          [".product-direction-list article:nth-child(2) p", "餐桌、茶几、边几、底座、玄关台和雕塑感石材家具。"],
+          [".product-direction-list article:nth-child(3) strong", "工程项目定制"],
+          [".product-direction-list article:nth-child(3) p", "酒店、别墅、零售空间和设计师项目，可按图纸、样品或参考图生产。"],
+          [".product-catalog .eyebrow", "浏览产品"],
+          ["#catalog-title", "围绕材料和定制需求的产品参考。"],
+          [".product-catalog .section-heading > p:last-child", "按台盆、餐桌、浴室或工程定制筛选常见产品方向。"],
+          [".filter-button[data-filter='all']", "全部"],
+          [".filter-button[data-filter='sinks']", "台盆"],
+          [".filter-button[data-filter='tables']", "餐桌"],
+          [".filter-button[data-filter='bathroom']", "浴室"],
+          [".filter-button[data-filter='project']", "工程"],
+          [".material-section .eyebrow", "材料方向"],
+          ["#material-title", "在客户询盘前，先展示可定制内容。"],
+          [".spec-list div:nth-child(1) span", "材料"],
+          [".spec-list div:nth-child(1) strong", "大理石、洞石、石英岩、缟玛瑙、石灰石"],
+          [".spec-list div:nth-child(2) span", "表面"],
+          [".spec-list div:nth-child(2) strong", "抛光、哑光、拉丝、皮革面、填孔或不填孔"],
+          [".spec-list div:nth-child(3) span", "生产"],
+          [".spec-list div:nth-child(3) strong", "CAD 确认、排版配板、手工处理、出口包装"],
+          [".spec-list div:nth-child(4) span", "订单类型"],
+          [".spec-list div:nth-child(4) strong", "单件定制、项目批量、OEM/ODM 产品线"],
+          [".cta-band .eyebrow", "定制需求"],
+          ["#products-cta-title", "发送产品参考、图纸或目标材料。"],
+          [".cta-band .button", "开始询盘"]
+        ],
+        products: [
+          ["台盆 / 大理石", "奢华绿色大理石立柱盆", "天然绿色大理石，可定制排水位置、抛光或哑光表面。"],
+          ["台盆 / 卡拉卡塔", "卡拉卡塔大理石立柱盆", "适用于高端住宅和酒店浴室的简洁立柱造型。"],
+          ["台盆 / 台上盆", "手工石材台上盆", "适合设计师系列和项目成套产品的小型生产参考。"],
+          ["餐桌 / 洞石", "极简洞石餐桌", "可定制雕塑感底座、配板和出口加固包装。"],
+          ["餐桌 / 餐厅", "优雅洞石餐桌", "优雅桌脚结构，适合标准化重复生产。"],
+          ["餐桌 / 极简", "简约洞石餐桌", "简洁轮廓、按需尺寸和温润天然表面。"],
+          ["浴室 / 浴缸", "天然大理石浴缸", "标志性石材浴缸，支持图纸确认和工厂验货。"],
+          ["餐桌 / 红洞石", "红洞石餐桌", "红棕色天然纹理，适合打造鲜明空间记忆点。"],
+          ["浴室 / 浴室柜", "奢华石材立柱浴室柜", "一体化石材造型，适用于精品浴室和 OEM 系列。"]
+        ]
+      },
+      blog: {
+        metaTitle: "石材博客 | 稳胜石材",
+        metaDescription: "阅读稳胜石材关于天然石材材料、定制产品设计、工厂流程、包装、保养和 OEM/ODM 项目的文章。",
+        ogTitle: "石材博客 | 稳胜石材",
+        ogDescription: "稳胜石材的材料指南、产品灵感、项目笔记和工厂流程文章。",
+        text: [
+          [".page-hero .eyebrow", "石材博客"],
+          ["#journal-hero-title", "帮助客户做石材定制决策的内容。"],
+          [".page-hero-content > p:not(.eyebrow)", "面向设计师、业主和产品团队，提供材料指南、产品灵感、项目笔记和工厂流程文章。"],
+          [".page-hero .button.primary", "阅读文章"],
+          [".page-hero .button.ghost", "产品目录"],
+          [".journal-feature .eyebrow", "精选指南"],
+          ["#feature-title", "如何为定制浴室台盆选择合适石材。"],
+          [".feature-story p:not(.eyebrow)", "大理石、洞石、石英岩和缟玛瑙在日常使用中的表现各不相同。好的文章能帮助客户在询盘前了解表面、保养、厚度、排水和包装要求。"],
+          [".story-meta span:nth-child(1)", "石材指南"],
+          [".story-meta span:nth-child(2)", "约 6 分钟阅读"],
+          [".story-meta span:nth-child(3)", "更新于 2026 年 4 月"],
+          [".feature-story .text-link span", "浏览相关文章"],
+          [".article-section .eyebrow", "文章库"],
+          ["#articles-title", "服务于选材、设计和生产的内容。"],
+          [".article-section .section-heading > p:last-child", "用指南、产品灵感、流程说明和保养文章，在询盘前回答客户问题。"],
+          [".filter-button[data-blog-filter='all']", "全部"],
+          [".filter-button[data-blog-filter='guide']", "石材指南"],
+          [".filter-button[data-blog-filter='ideas']", "产品灵感"],
+          [".filter-button[data-blog-filter='process']", "工厂流程"],
+          [".filter-button[data-blog-filter='care']", "保养"],
+          [".cta-band .eyebrow", "需要石材建议？"],
+          ["#journal-cta-title", "发送材料问题或产品参考。"],
+          [".cta-band .button", "联系工厂"]
+        ],
+        articles: [
+          ["石材指南", "绿色大理石台盆适合哪些空间", "关于纹理、灯光、水龙头搭配和表面工艺的设计建议。", "2026 年 4 月 18 日"],
+          ["产品灵感", "适合静奢空间的洞石餐桌", "如何确认餐桌比例、底座结构、配板方式和出口包装。", "2026 年 4 月 15 日"],
+          ["工厂流程", "图纸确认后会发生什么", "从采购、切割到检验、包装和交付的生产时间线。", "2026 年 4 月 12 日"],
+          ["保养", "天然大理石浴缸的日常保养", "清洁用品、密封周期和保护石材表面的使用习惯。", "2026 年 4 月 9 日"],
+          ["产品灵感", "什么时候选择红洞石而不是米色石材", "关于色彩方向、空间气质和生产要点的说明。", "2026 年 4 月 5 日"],
+          ["工厂流程", "石材家具 OEM/ODM 订单如何标准化", "产品线生产中的尺寸、容差、图纸、标签和包装细节。", "2026 年 4 月 1 日"]
+        ]
+      }
     }
   }
 };
 
+const pageKey = document.body.dataset.page || "home";
 let currentLanguage = localStorage.getItem("siteLanguage") === "zh" ? "zh" : "en";
 
 function setHeaderState() {
@@ -317,11 +502,7 @@ quoteForm?.addEventListener("submit", (event) => {
   window.location.href = mailto.toString();
 });
 
-function setText(selector, value) {
-  const element = document.querySelector(selector);
-
-  if (!element) return;
-
+function setElementText(element, value) {
   if (element.matches("label")) {
     const field = element.querySelector("input, textarea");
     element.textContent = value;
@@ -343,43 +524,94 @@ function setText(selector, value) {
   element.textContent = value;
 }
 
+function setText(selector, value) {
+  const element = document.querySelector(selector);
+
+  if (!element) return;
+
+  setElementText(element, value);
+}
+
+function setTextAll(selector, value) {
+  document.querySelectorAll(selector).forEach((element) => setElementText(element, value));
+}
+
 function applyLanguage(language) {
   if (!languageToggle || !languageLabel) return;
 
   const copy = translations[language];
+  const pageCopy = copy.pages?.[pageKey];
+  const metaTitle = pageCopy?.metaTitle || copy.metaTitle;
+  const metaDescription = pageCopy?.metaDescription || copy.metaDescription;
+  const ogTitle = pageCopy?.ogTitle || (language === "zh" ? "稳胜石材 | 天然石材定制" : "Win-Win Stone");
+  const ogDescription = pageCopy?.ogDescription || metaDescription;
 
   document.documentElement.lang = language === "zh" ? "zh-CN" : "en";
-  document.title = copy.metaTitle;
-  document.querySelector("meta[name='description']").setAttribute("content", copy.metaDescription);
-  document.querySelector("meta[property='og:title']").setAttribute("content", language === "zh" ? "稳胜石材 | 天然石材定制" : "Win-Win Stone");
-  document.querySelector("meta[property='og:description']").setAttribute("content", copy.metaDescription);
+  document.title = metaTitle;
+  document.querySelector("meta[name='description']").setAttribute("content", metaDescription);
+  document.querySelector("meta[property='og:title']").setAttribute("content", ogTitle);
+  document.querySelector("meta[property='og:description']").setAttribute("content", ogDescription);
   document.querySelectorAll(".brand").forEach((brand) => {
     brand.setAttribute("aria-label", language === "zh" ? "稳胜石材" : "Win-Win Stone");
   });
   languageLabel.textContent = copy.switchLabel;
   languageToggle.setAttribute("aria-label", copy.switchAria);
 
-  copy.text.forEach(([selector, value]) => setText(selector, value));
+  [
+    [".skip-link", language === "zh" ? "跳到主要内容" : "Skip to content"],
+    [".site-header .brand span, .site-footer .brand span", language === "zh" ? "稳胜石材" : "Win-Win Stone"],
+    [".nav-toggle .sr-only", language === "zh" ? "打开导航" : "Open navigation"],
+    [".nav-links a[href='products.html'], .footer-links a[href='products.html']", language === "zh" ? "产品" : "Products"],
+    [".nav-links a[href='blog.html'], .footer-links a[href='blog.html']", language === "zh" ? "博客" : "Blog"],
+    [".nav-links a[href='#service'], .nav-links a[href='index.html#service'], .footer-links a[href='#service'], .footer-links a[href='index.html#service']", "OEM/ODM"],
+    [".nav-links a[href='#why-us'], .footer-links a[href='#why-us']", language === "zh" ? "为什么选我们" : "Why Us"],
+    [".nav-links a[href='#contact'], .nav-links a[href='index.html#contact'], .footer-links a[href='#contact'], .footer-links a[href='index.html#contact']", language === "zh" ? "联系" : "Contact"],
+    [".site-footer p", language === "zh" ? "天然石材定制产品、源头工厂 OEM/ODM 服务与全球交付。" : "Custom natural stone products, factory-backed OEM/ODM service, and global delivery."]
+  ].forEach(([selector, value]) => setTextAll(selector, value));
 
-  document.querySelectorAll(".process-list li").forEach((item, index) => {
-    const number = item.querySelector("span").textContent;
-    item.textContent = "";
-    const numberElement = document.createElement("span");
-    numberElement.textContent = number;
-    item.append(numberElement, copy.process[index]);
-  });
+  if (pageKey === "home") {
+    copy.text.forEach(([selector, value]) => setText(selector, value));
+  }
+
+  pageCopy?.text.forEach(([selector, value]) => setText(selector, value));
+
+  if (pageKey === "home") {
+    document.querySelectorAll(".process-list li").forEach((item, index) => {
+      const number = item.querySelector("span").textContent;
+      item.textContent = "";
+      const numberElement = document.createElement("span");
+      numberElement.textContent = number;
+      item.append(numberElement, copy.process[index]);
+    });
+  }
 
   document.querySelectorAll(".product-card").forEach((card, index) => {
-    const [type, title, description] = copy.products[index];
+    const products = pageCopy?.products || copy.products;
+    const product = products[index];
+    if (!product) return;
+
+    const [type, title, description] = product;
     card.querySelector(".product-type").textContent = type;
     card.querySelector("strong").textContent = title;
     card.querySelector(".product-body span:last-child").textContent = description;
   });
 
-  document.querySelectorAll(".proof-item").forEach((item, index) => {
-    const [title, description] = copy.proof[index];
-    item.querySelector("strong").textContent = title;
-    item.querySelector("span").textContent = description;
+  if (pageKey === "home") {
+    document.querySelectorAll(".proof-item").forEach((item, index) => {
+      const [title, description] = copy.proof[index];
+      item.querySelector("strong").textContent = title;
+      item.querySelector("span").textContent = description;
+    });
+  }
+
+  pageCopy?.articles?.forEach(([category, title, description, date], index) => {
+    const card = document.querySelectorAll(".article-card")[index];
+    if (!card) return;
+
+    card.querySelector(".product-type").textContent = category;
+    card.querySelector("strong").textContent = title;
+    card.querySelector(".article-body span:not(.product-type):not(.article-date)").textContent = description;
+    card.querySelector(".article-date").textContent = date;
   });
 
   if (quoteForm?.elements.subject) {
