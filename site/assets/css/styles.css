@@ -82,7 +82,10 @@ svg {
   position: fixed;
   inset: 0 0 auto;
   z-index: 10;
-  transition: background 180ms ease, box-shadow 180ms ease;
+  background: rgba(12, 24, 18, 0.52);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  transition: background 300ms ease, box-shadow 300ms ease, color 300ms ease;
 }
 
 .site-header.is-scrolled,
@@ -90,6 +93,7 @@ svg {
   background: rgba(247, 245, 239, 0.94);
   box-shadow: 0 12px 32px rgba(23, 32, 27, 0.08);
   backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 
 .nav-shell {
@@ -108,6 +112,12 @@ svg {
   gap: 12px;
   font-weight: 800;
   text-transform: uppercase;
+  color: #fff;
+  transition: color 300ms ease;
+}
+
+.site-header.is-scrolled .brand,
+.site-header.nav-open .brand {
   color: var(--green);
 }
 
@@ -124,18 +134,38 @@ svg {
 
 .nav-links a {
   padding: 10px 14px;
-  color: var(--ink);
+  color: rgba(255, 255, 255, 0.88);
   font-weight: 700;
   border-radius: 6px;
+  transition: color 300ms ease, background 300ms ease;
+}
+
+.site-header.is-scrolled .nav-links a,
+.site-header.nav-open .nav-links a {
+  color: var(--ink);
 }
 
 .nav-links a:hover,
 .nav-links a:focus-visible {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.site-header.is-scrolled .nav-links a:hover,
+.site-header.is-scrolled .nav-links a:focus-visible,
+.site-header.nav-open .nav-links a:hover,
+.site-header.nav-open .nav-links a:focus-visible {
   color: var(--green);
   background: rgba(23, 61, 48, 0.08);
 }
 
 .nav-links a.is-active {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.site-header.is-scrolled .nav-links a.is-active,
+.site-header.nav-open .nav-links a.is-active {
   color: var(--green);
   background: rgba(23, 61, 48, 0.1);
 }
@@ -145,8 +175,16 @@ svg {
   place-items: center;
   width: 44px;
   height: 44px;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(255, 255, 255, 0.24);
   border-radius: 6px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  transition: color 300ms ease, border-color 300ms ease, background 300ms ease;
+}
+
+.site-header.is-scrolled .nav-toggle,
+.site-header.nav-open .nav-toggle {
+  border-color: var(--line);
   color: var(--ink);
   background: rgba(255, 255, 255, 0.76);
 }
@@ -155,12 +193,20 @@ svg {
   min-width: 56px;
   min-height: 38px;
   padding: 8px 12px;
-  border: 1px solid rgba(23, 61, 48, 0.24);
+  border: 1px solid rgba(255, 255, 255, 0.28);
   border-radius: 6px;
-  color: var(--green);
-  background: rgba(255, 255, 255, 0.82);
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
   cursor: pointer;
   font-weight: 900;
+  transition: color 300ms ease, border-color 300ms ease, background 300ms ease;
+}
+
+.site-header.is-scrolled .language-toggle,
+.site-header.nav-open .language-toggle {
+  border-color: rgba(23, 61, 48, 0.24);
+  color: var(--green);
+  background: rgba(255, 255, 255, 0.82);
 }
 
 .language-toggle:hover,
