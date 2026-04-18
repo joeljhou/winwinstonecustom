@@ -274,7 +274,7 @@ h3 {
   margin-top: 24px;
 }
 
-.hero-social-links a {
+.hero-social-links .social-link {
   display: grid;
   place-items: center;
   width: 44px;
@@ -287,8 +287,8 @@ h3 {
   transition: all 200ms ease;
 }
 
-.hero-social-links a.whatsapp:hover,
-.hero-social-links a.whatsapp:focus-visible {
+.hero-social-links .social-link.whatsapp:hover,
+.hero-social-links .social-link.whatsapp:focus-visible {
   background: #25D366;
   color: white;
   transform: translateY(-3px) scale(1.05);
@@ -296,8 +296,8 @@ h3 {
   border-color: transparent;
 }
 
-.hero-social-links a.youtube:hover,
-.hero-social-links a.youtube:focus-visible {
+.hero-social-links .social-link.youtube:hover,
+.hero-social-links .social-link.youtube:focus-visible {
   background: #FF0000;
   color: white;
   transform: translateY(-3px) scale(1.05);
@@ -305,8 +305,8 @@ h3 {
   border-color: transparent;
 }
 
-.hero-social-links a.tiktok:hover,
-.hero-social-links a.tiktok:focus-visible {
+.hero-social-links .social-link.tiktok:hover,
+.hero-social-links .social-link.tiktok:focus-visible {
   background: #000000;
   color: white;
   transform: translateY(-3px) scale(1.05);
@@ -314,8 +314,8 @@ h3 {
   border-color: transparent;
 }
 
-.hero-social-links a.instagram:hover,
-.hero-social-links a.instagram:focus-visible {
+.hero-social-links .social-link.instagram:hover,
+.hero-social-links .social-link.instagram:focus-visible {
   background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   color: white;
   transform: translateY(-3px) scale(1.05);
@@ -323,7 +323,7 @@ h3 {
   border-color: transparent;
 }
 
-.hero-social-links a svg {
+.hero-social-links .social-link svg {
   width: 1.15rem;
   height: 1.15rem;
 }
