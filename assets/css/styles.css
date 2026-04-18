@@ -546,14 +546,19 @@ h3 {
 }
 
 .proof-item {
-  min-height: 176px;
+  height: 176px;
   display: grid;
-  align-content: end;
+  align-content: space-between;
   gap: 10px;
   padding: 22px;
   border-radius: var(--radius);
   background: var(--white);
   border: 1px solid rgba(23, 32, 27, 0.1);
+}
+
+.proof-item strong,
+.proof-item span {
+  width: 100%;
 }
 
 .proof-item strong {
