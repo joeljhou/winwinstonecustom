@@ -267,6 +267,67 @@ h3 {
   margin-top: 30px;
 }
 
+.hero-social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.hero-social-links a {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--white);
+  transition: all 200ms ease;
+}
+
+.hero-social-links a.whatsapp:hover,
+.hero-social-links a.whatsapp:focus-visible {
+  background: #25D366;
+  color: white;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.4);
+  border-color: transparent;
+}
+
+.hero-social-links a.youtube:hover,
+.hero-social-links a.youtube:focus-visible {
+  background: #FF0000;
+  color: white;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 16px rgba(255, 0, 0, 0.4);
+  border-color: transparent;
+}
+
+.hero-social-links a.tiktok:hover,
+.hero-social-links a.tiktok:focus-visible {
+  background: #000000;
+  color: white;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  border-color: transparent;
+}
+
+.hero-social-links a.instagram:hover,
+.hero-social-links a.instagram:focus-visible {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: white;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 16px rgba(225, 48, 108, 0.4);
+  border-color: transparent;
+}
+
+.hero-social-links a svg {
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -804,6 +865,12 @@ h3 {
 :lang(zh-CN) .why-copy p,
 :lang(zh-CN) .contact-grid p {
   line-height: 1.9;
+}
+
+:lang(zh-CN) .proof-item {
+  height: auto;
+  min-height: 120px;
+  align-content: end;
 }
 
 :lang(zh-CN) .proof-item strong {
