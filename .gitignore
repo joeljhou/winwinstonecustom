@@ -1,8 +1,11 @@
-node_modules/
+/.idea/
+.playwright-mcp/
+.pnpm-store/
 .next/
 .turbo/
 .vercel/
-.env*.local
+node_modules/
 dist/
 out/
+.env*.local
 *.tsbuildinfo
