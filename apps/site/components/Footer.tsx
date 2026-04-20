@@ -5,7 +5,8 @@ import { Link } from "@/i18n/navigation";
 import { useLanguage } from "@/lib/LanguageContext";
 
 export default function Footer() {
-  const { t } = useLanguage();
+  const { language, t } = useLanguage();
+  const homeAnchor = (id: string) => `/${language}/#${id}`;
 
   return (
     <footer className="site-footer">
@@ -34,9 +35,9 @@ export default function Footer() {
         <div className="footer-links">
           <Link href="/products">{t.nav.products}</Link>
           <Link href="/blog">{t.nav.blog}</Link>
-          <Link href="/#service">{t.nav.oem}</Link>
-          <Link href="/#why-us">{t.nav.whyUs}</Link>
-          <Link href="/#contact">{t.nav.contact}</Link>
+          <a href={homeAnchor("service")}>{t.nav.oem}</a>
+          <a href={homeAnchor("why-us")}>{t.nav.whyUs}</a>
+          <a href={homeAnchor("contact")}>{t.nav.contact}</a>
         </div>
       </div>
     </footer>

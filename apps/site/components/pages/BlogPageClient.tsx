@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 import { useLanguage } from "@/lib/LanguageContext";
 
 export default function BlogPage() {
-  const { t } = useLanguage();
+  const { language, t } = useLanguage();
   const b = t.blogPage;
   const [filter, setFilter] = useState("all");
 
@@ -134,10 +134,10 @@ export default function BlogPage() {
               <p className="eyebrow">{b.ctaEyebrow}</p>
               <h2 id="journal-cta-title">{b.ctaTitle}</h2>
             </div>
-            <Link className="button primary" href="/#contact">
+            <a className="button primary" href={`/${language}/#contact`}>
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4z" /><path d="m4 7 8 6 8-6" /></svg>
               {b.ctaButton}
-            </Link>
+            </a>
           </div>
         </section>
       </main>

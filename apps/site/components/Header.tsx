@@ -8,7 +8,7 @@ import { useLanguage } from "@/lib/LanguageContext";
 export default function Header() {
   const [navOpen, setNavOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const { languageHref, t } = useLanguage();
+  const { language, languageHref, t } = useLanguage();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -18,6 +18,16 @@ export default function Header() {
   }, []);
 
   const close = () => setNavOpen(false);
+  const homeAnchor = (id: string) => `/${language}/#${id}`;
+  const getCleanHash = () => {
+    const hash = window.location.hash;
+    if (!hash) {
+      return "";
+    }
+
+    const [firstHash] = hash.slice(1).split("#");
+    return firstHash ? `#${firstHash}` : "";
+  };
 
   return (
     <header className={`site-header${scrolled ? " is-scrolled" : ""}${navOpen ? " nav-open" : ""}`} data-header>
@@ -41,9 +51,9 @@ export default function Header() {
         <div className={`nav-links${navOpen ? " is-open" : ""}`} id="primary-nav">
           <Link href="/products" onClick={close}>{t.nav.products}</Link>
           <Link href="/blog" onClick={close}>{t.nav.blog}</Link>
-          <Link href="/#service" onClick={close}>{t.nav.oem}</Link>
-          <Link href="/#why-us" onClick={close}>{t.nav.whyUs}</Link>
-          <Link href="/#contact" onClick={close}>{t.nav.contact}</Link>
+          <a href={homeAnchor("service")} onClick={close}>{t.nav.oem}</a>
+          <a href={homeAnchor("why-us")} onClick={close}>{t.nav.whyUs}</a>
+          <a href={homeAnchor("contact")} onClick={close}>{t.nav.contact}</a>
         </div>
 
         <a
@@ -51,7 +61,7 @@ export default function Header() {
           href={languageHref}
           onClick={(event) => {
             close();
-            event.currentTarget.href = `${languageHref}${window.location.search}${window.location.hash}`;
+            event.currentTarget.href = `${languageHref}${window.location.search}${getCleanHash()}`;
           }}
           aria-label={t.switchAria}
         >

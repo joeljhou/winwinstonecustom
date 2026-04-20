@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { Link } from "@/i18n/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ProductDialog, { FilterBar, ProductGrid } from "@/components/ProductWidgets";
@@ -43,10 +42,10 @@ export default function ProductsPage() {
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h14v14H5z" /><path d="M9 5v14M5 10h14" /></svg>
                 {p.heroBrowse}
               </a>
-              <Link className="button ghost" href="/#contact">
+              <a className="button ghost" href={`/${language}/#contact`}>
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4z" /><path d="m4 7 8 6 8-6" /></svg>
                 {p.heroQuote}
-              </Link>
+              </a>
             </div>
           </div>
         </section>
@@ -110,10 +109,10 @@ export default function ProductsPage() {
               <p className="eyebrow">{p.ctaEyebrow}</p>
               <h2 id="products-cta-title">{p.ctaTitle}</h2>
             </div>
-            <Link className="button primary" href="/#contact">
+            <a className="button primary" href={`/${language}/#contact`}>
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 2 11 13" /><path d="m22 2-7 20-4-9-9-4 20-7z" /></svg>
               {p.ctaButton}
-            </Link>
+            </a>
           </div>
         </section>
       </main>

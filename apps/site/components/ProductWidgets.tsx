@@ -2,7 +2,6 @@
 
 import { useRef, useEffect } from "react";
 import Image from "next/image";
-import { Link } from "@/i18n/navigation";
 import { useLanguage } from "@/lib/LanguageContext";
 
 interface ProductDialogProps {
@@ -43,10 +42,10 @@ export default function ProductDialog({ product, onClose }: ProductDialogProps) 
             <p className="eyebrow">{t.home.dialogEyebrow}</p>
             <h3>{language === "zh" ? product.titleZh : product.title}</h3>
             <p>{language === "zh" ? product.descZh : product.desc}</p>
-            <Link className="button primary" href="/#contact" onClick={close}>
+            <a className="button primary" href={`/${language}/#contact`} onClick={close}>
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4z" /><path d="m4 7 8 6 8-6" /></svg>
               {t.home.dialogQuote}
-            </Link>
+            </a>
           </div>
         </>
       )}
