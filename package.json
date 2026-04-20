@@ -8,7 +8,11 @@
     "dev:site": "turbo dev --filter=site",
     "dev:admin": "turbo dev --filter=admin",
     "build:site": "turbo build --filter=site",
-    "build:admin": "turbo build --filter=admin"
+    "build:admin": "turbo build --filter=admin",
+    "deploy:site": "cd apps/site && vercel",
+    "deploy:admin": "cd apps/admin && vercel",
+    "deploy:site:prod": "cd apps/site && vercel --prod",
+    "deploy:admin:prod": "cd apps/admin && vercel --prod"
   },
   "devDependencies": {
     "turbo": "^2"
